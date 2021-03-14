@@ -81,7 +81,7 @@ function showWinner(winner, computerChoice) {
         <h1>It's A Draw</h1> 
         <i class="fas fa-hand-${computerChoice} fa-10x"></i>
         <p>Computer Chose <strong>${computerChoice.charAt(0).toUpperCase() +
-        computerChoice.slice(1)}</strong></p>
+            computerChoice.slice(1)}</strong></p>
         `;
     }
     // Show score
