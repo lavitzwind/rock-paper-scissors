@@ -90,7 +90,7 @@ if (winner === 'player') {
   modal.style.display = 'block';
 }  
 
-// Restart Game
+// Restart game
 function restartGame(e) {
     scoreboard.player = 0;
     scoreboard.computer = 0;
