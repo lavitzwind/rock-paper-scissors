@@ -100,7 +100,7 @@ const clearModal = (e) => {
 }
 
 // Restart game
-const restartGame = (e) =>{
+const restartGame = () => {
     scoreboard.player = 0;
     scoreboard.computer = 0;
     score.innerHTML = `
