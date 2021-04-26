@@ -19,7 +19,7 @@ function play(e) {
 }
 
 // Get computer choice
-function getComputerChoice() {
+const getComputerChoice = () => {
     const rand = Math.random();
     if(rand < 0.34) {
         return 'rock';
@@ -31,7 +31,7 @@ function getComputerChoice() {
 }
 
 // Get game winner
-function getWinner(p, c) {
+const getWinner = (p, c) => {
     if (p === c) {
         return 'draw';
     } else if (p === 'rock') {
@@ -56,7 +56,7 @@ function getWinner(p, c) {
 }
 
 // Show winner
-function showWinner(winner, computerChoice) {
+const showWinner = (winner, computerChoice) => {
     if (winner === 'player') {
         // Inc player score
         scoreboard.player++;
@@ -93,14 +93,14 @@ function showWinner(winner, computerChoice) {
 }
 
 // CLear modal
-function clearModal(e) {
+const clearModal = (e) => {
     if(e.target == modal) {
         modal.style.display = 'none';
     }
 }
 
 // Restart game
-function restartGame(e){
+const restartGame = (e) =>{
     scoreboard.player = 0;
     scoreboard.computer = 0;
     score.innerHTML = `
