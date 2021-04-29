@@ -1,6 +1,6 @@
 :root {
     --modal-duration: 1s;
-  }
+}
 
 .modal {
     display: none;
