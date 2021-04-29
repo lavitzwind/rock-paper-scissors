@@ -9,13 +9,12 @@ const scoreboard = {
 };
 
 // Play
-function play(e) {
+const play = (e) => {
     restart.style.display = 'inline-block';
     playerChoice = e.target.id;
     computerChoice = getComputerChoice();
     winner = getWinner(playerChoice, computerChoice);
     showWinner(winner, computerChoice);
-
 }
 
 // Get computer choice
@@ -42,9 +41,9 @@ const getWinner = (p, c) => {
         }
     } else if (p === 'paper') {
         if (c === 'scissors') {
-            return 'computer'; 
+            return 'computer'
         } else {
-            return 'player';
+            return 'player'
         }
     } else if (p === 'scissors') {
         if (c === 'rock') {
@@ -89,10 +88,10 @@ const showWinner = (winner, computerChoice) => {
     <p>Computer: ${scoreboard.computer}</p>
     `
 
-    modal.style.display = 'block';
+    modal.style.display = 'block'
 }
 
-// CLear modal
+// Clear modal
 const clearModal = (e) => {
     if(e.target == modal) {
         modal.style.display = 'none';
@@ -104,8 +103,8 @@ const restartGame = () => {
     scoreboard.player = 0;
     scoreboard.computer = 0;
     score.innerHTML = `
-    <p>Player: 0</p>
-    <p>Computer: 0</p>
+    <p>Player: ${scoreboard.player}</p>
+    <p>Computer: ${scoreboard.computer}</p>
     `
 }
 
